@@ -1,7 +1,7 @@
 ---
 # Set to 'pi' for Raspberry Pi OS, or 'pirate' for HypriotOS.
 ansible_user: pi
-ansible_ssh_private_key_file: ~/.ssh/id_rsa.home-server
+ansible_ssh_private_key_file: ~/.ssh/id_rsa
 ansible_ssh_extra_args: "-o StrictHostKeyChecking=no"
 
 # Set to 'arm64' for a 64-bit OS, or 'arm' for 32-bit.
@@ -14,3 +14,6 @@ load_balancer_server_ip: 192.168.1.153
 # Dramble.
 # ingress_server_ip: 10.0.100.83
 # load_balancer_server_ip: 10.0.100.131
+
+cluster_monitoring_version: c04bb08b05b7f02790540b58997f83e1591f3eb4
+cluster_monitoring_update_repo: true
